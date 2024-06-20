@@ -1,0 +1,135 @@
+.signature-container {
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  canvas {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .controls {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+  }
+  
+  .control-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .control-group label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  #brushSize, #colorPicker {
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .clear-button {
+    background-color: #ff4d4d;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .clear-button:hover {
+    background-color: #ff1a1a;
+  }
+  
+  .download-button {
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #45a049;
+  }
+  
+  .dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dialog {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .dialog p {
+    margin-bottom: 20px;
+  }
+  
+  .dialog .button {
+    margin: 10px 5px;
+  }
+  
+  .download-with-bg {
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-with-bg:hover {
+    background-color: #45a049;
+  }
+  
+  .download-without-bg {
+    background-color: #f0ad4e;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-without-bg:hover {
+    background-color: #ec971f;
+  }
+  
+  .close-dialog {
+    background-color: #d9534f;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-dialog:hover {
+    background-color: #c9302c;
+  }
+  

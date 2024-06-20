@@ -1,0 +1,27 @@
+<div class="signature-container">
+    <canvas #canvas width="600" height="300"></canvas>
+    <div class="controls">
+      <div class="control-group">
+        <label for="brushSize">Brush Size: </label>
+        <input type="range" id="brushSize" min="1" max="10" [(ngModel)]="brushSize" (input)="updateBrushSize()">
+      </div>
+      <div class="control-group">
+        <label for="colorPicker">Color: </label>
+        <input type="color" id="colorPicker" [(ngModel)]="brushColor" (input)="updateBrushColor()">
+      </div>
+    </div>
+    <div class="button-container">
+      <button (click)="clear()" class="button clear-button">Clear</button>
+      <button (click)="showDownloadOptions()" class="button download-button">Download</button>
+    </div>
+  
+    <!-- Download Options Dialog -->
+    <div *ngIf="showDialog" class="dialog-overlay">
+      <div class="dialog">
+        <p>Select download option:</p>
+        <button (click)="download('with-bg')" class="button download-with-bg disabled">Without Background</button>
+        <button (click)="closeDialog()" class="button close-dialog">Cancel</button>
+      </div>
+    </div>
+  </div>
+  
